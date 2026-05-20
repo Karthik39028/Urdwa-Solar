@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 220 40% 12%;
+  --card: 0 0% 100%;
+  --border: 220 20% 92%;
+  --input: 220 20% 92%;
+  --muted: 220 20% 96%;
+  --muted-foreground: 220 12% 45%;
+  --secondary: 145 50% 96%;
+  --secondary-foreground: 220 40% 18%;
+  --primary: 220 40% 18%;
+  --primary-foreground: 0 0% 100%;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer utilities {
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.reveal.in-view { opacity: 1; transform: translateY(0); }
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 220 40% 12%;
+  --card: 0 0% 100%;
+  --border: 220 20% 92%;
+  --input: 220 20% 92%;
+  --muted: 220 20% 96%;
+  --muted-foreground: 220 12% 45%;
+  --secondary: 145 50% 96%;
+  --secondary-foreground: 220 40% 18%;
+  --primary: 220 40% 18%;
+  --primary-foreground: 0 0% 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Logo sizing helpers (navbar + footer) */
+.navbar-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.navbar .logo-box {
+  height: 60px;
+  overflow: visible;
+}
+
+footer .logo-box {
+  height: 100px;
+}
+
+.logo-box img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Navbar logo visibility and responsive sizing */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo img {
+  height: 60px;
+  width: auto;
+  max-width: none;
+  min-width: 220px;
+  display: block;
+  object-fit: contain;
+  transform: scale(1.75);
+  transform-origin: left center;
+}
+
+@media (max-width: 768px) {
+  .navbar .logo img {
+    min-width: 160px;
+    transform: scale(1.45);
+  }
+}
+
+.footer-logo {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
