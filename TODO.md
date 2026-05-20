@@ -1,9 +1,7 @@
 # TODO
 
-- [ ] Update `src/components/Navbar.jsx` to use proper route paths (/, /about, /partner, /services, /photos, /contact) instead of hash anchors for cross-page navigation.
-- [x] Update `src/App.jsx` to add missing `<Route />` entries for the above paths so clicking navbar from `/products` navigates correctly.
-- [x] Verify navigation in dev server (click navbar from Products page to other pages) and ensure no runtime errors.
-
-
-
+- [ ] Remove the Urdhwa WaaRaee image from Home/About section (replace layout so text remains and is aligned to the right of about us content)
+- [ ] Keep the heading/text: “Rooftop solar made for real homes”
+- [ ] Update component styling to match (no image column; adjust grid/spacing)
+- [x] Run build/dev check to ensure no broken imports
 

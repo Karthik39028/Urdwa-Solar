@@ -2,6 +2,10 @@ import { PlugZap, Zap } from "lucide-react";
 import { useMemo } from "react";
 
 import solarPanel from "@/assets/solar-panel.png";
+import solarKitImg from "@/assets/solarkit.png";
+import pvModulesImg from "@/assets/pv _modules.jpg";
+import inverterImg from "@/assets/inverter.jpg";
+
 
 import WCACEEE001 from "@/assets/WCACEEE001.png";
 import WCDCSHE001 from "@/assets/WCDCSHE001.png";
@@ -836,9 +840,48 @@ export function Products() {
             Solar products we supply
           </h2>
           <p className="mt-3 text-muted-foreground">
-            Choose a category to explore. All product models are displayed below in a structured list.
-            New product categories can be added anytime.
+            Solar systems come together in a few essential product categories—from ready-to-install kits to high-performance modules and on-grid inverters.
+            Select a category to explore how each part is designed for dependable performance in Indian conditions like heat, dust, and everyday grid variations.
+            Together, they help you move from planning to clean energy with confidence.
           </p>
+
+          <div className="mt-8 text-left reveal">
+            <div className="grid gap-5 md:grid-cols-[1fr_280px] items-center">
+              <div>
+                <h3 className="text-xl font-bold text-brand-navy">Solar Kits</h3>
+                <p className="mt-2 text-muted-foreground leading-relaxed">
+                  Ready-to-install on-grid rooftop kits with essential components bundled for faster installation and reliable performance.
+                </p>
+              </div>
+              <div className="rounded-3xl bg-secondary/40 p-3">
+                <img src={solarKitImg} alt="Solar Kits" className="w-full h-auto object-contain" loading="lazy" />
+              </div>
+            </div>
+
+            <div className="mt-6 grid gap-5 md:grid-cols-[1fr_280px] items-center">
+              <div>
+                <h3 className="text-xl font-bold text-brand-navy">PV Modules</h3>
+                <p className="mt-2 text-muted-foreground leading-relaxed">
+                  High-performance power-generating modules designed for long-term efficiency under real rooftop conditions.
+                </p>
+              </div>
+              <div className="rounded-3xl bg-secondary/40 p-3">
+                <img src={pvModulesImg} alt="PV Modules" className="w-full h-auto object-contain" loading="lazy" />
+              </div>
+            </div>
+
+            <div className="mt-6 grid gap-5 md:grid-cols-[1fr_280px] items-center">
+              <div>
+                <h3 className="text-xl font-bold text-brand-navy">Solar Inverters</h3>
+                <p className="mt-2 text-muted-foreground leading-relaxed">
+                  Convert DC output into stable on-grid AC power for single-phase and three-phase solar systems.
+                </p>
+              </div>
+              <div className="rounded-3xl bg-secondary/40 p-3">
+                <img src={inverterImg} alt="Solar Inverters" className="w-full h-auto object-contain" loading="lazy" />
+              </div>
+            </div>
+          </div>
         </div>
 
         <CategoryNav />
