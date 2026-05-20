@@ -12,6 +12,16 @@ export function About() {
             Urdwa Solar is committed to bringing clean, reliable solar power to every household in and around Kakinada.
             We guide you from the first site visit to system design, installation, and after-sales support—so you can go solar with confidence.
           </p>
+
+          {/* URDWA-WAA left image */}
+          <div className="mt-6">
+            <img
+              src={aboutImg}
+              alt="Urdwa WaaRaee"
+              loading="lazy"
+              className="w-full max-w-md rounded-2xl border border-border/60 shadow-soft object-cover"
+            />
+          </div>
         </div>
         <div className="reveal">
           <span className="text-sm font-semibold tracking-wide uppercase text-brand-green">About Us</span>

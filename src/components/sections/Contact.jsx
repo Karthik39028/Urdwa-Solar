@@ -83,6 +83,8 @@ export function Contact() {
               <ul className="mt-4 space-y-3 text-sm">
                 <li className="flex items-center gap-3"><Phone className="h-4 w-4 text-brand-green" /> {PHONE_PRIMARY}</li>
                 <li className="flex items-center gap-3"><Phone className="h-4 w-4 text-brand-green" /> {PHONE_SECONDARY}</li>
+                <li className="flex items-center gap-3"><Phone className="h-4 w-4 text-brand-green" /> +91 79-81790480</li>
+
 
                 <li className="flex items-center gap-3"><Mail className="h-4 w-4 text-brand-green" /> solarurdwa@gmail.com</li>
                 <li>
