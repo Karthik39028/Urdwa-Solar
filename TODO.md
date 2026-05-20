@@ -1,7 +1,12 @@
 # TODO
 
-- [ ] Remove the Urdhwa WaaRaee image from Home/About section (replace layout so text remains and is aligned to the right of about us content)
-- [ ] Keep the heading/text: “Rooftop solar made for real homes”
-- [ ] Update component styling to match (no image column; adjust grid/spacing)
-- [x] Run build/dev check to ensure no broken imports
+## Completed
+- (none)
+
+## To do
+- [ ] Add “Solar Kits” category entry to `productCategories` in `src/components/sections/Products.jsx`.
+- [ ] Add `solarKits` products array with WAAREE Radiance Solar Kit content in `src/components/sections/Products.jsx`.
+- [ ] Add category object to `categoryData` (title/description/icon/products) so it renders under “Solar Kits”.
+- [x] Run build/dev check to ensure no compilation errors.
+
 

@@ -67,6 +67,7 @@ const productCategories = [
   { id: "products-acdb", label: "ACDB" },
   { id: "products-acdb-elmex", label: "ACDB - Elmex & Havells" },
   { id: "products-dcdb", label: "DCDB" },
+  { id: "products-solar-kits", label: "Solar Kits" },
 ];
 
 const panels = [
@@ -93,6 +94,23 @@ const panels = [
   },
 ];
 
+const solarKits = [
+  {
+    img: solarKitImg,
+    name: "WAAREE Radiance Solar Kit (3 kW / 4 kW / 5 kW)",
+    power: "3–5 kW",
+    desc: "WAAREE Radiance is a complete rooftop solar kit built to simplify residential on-grid solar adoption. It combines solar modules, an on-grid inverter, DCDB & ACDB protection boxes (SPD/MCB), earthing accessories, and installation-ready DC/AC cabling and connectors—reducing research, paperwork, and contractor dependency while helping homeowners save on electricity bills and lower their carbon footprint (subsidy eligibility varies).",
+    tags: [
+      "Easy installation",
+      "Compact kit design",
+      "Low maintenance",
+      "Reduce electricity bills",
+      "Lower carbon footprint",
+      "PM Surya Ghar subsidy (up to ₹78,000, eligibility varies)",
+      "Warranty up to 30 years (variant-wise)",
+    ],
+  },
+];
 
 
 const fuseConnectors = [
@@ -825,13 +843,24 @@ export function Products() {
         products: dcdb,
         pillLabel: "DCDB",
       },
+      {
+        id: "products-solar-kits",
+        title: "Solar Kits",
+        description:
+          "All-in-one rooftop solar kits designed to simplify planning, installation and maintenance for residential on-grid systems.",
+        icon: Zap,
+        products: solarKits,
+        pillLabel: "Solar Kits",
+      },
     ],
     []
   );
 
   return (
     <section id="products" className="py-20 sm:py-28">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="w-full px-4 sm:px-6">
+
+
         <div className="text-center reveal max-w-2xl mx-auto">
           <span className="text-sm font-semibold tracking-wide uppercase text-brand-green">
             Products
@@ -850,13 +879,40 @@ export function Products() {
               <div>
                 <h3 className="text-xl font-bold text-brand-navy">Solar Kits</h3>
                 <p className="mt-2 text-muted-foreground leading-relaxed">
-                  Ready-to-install on-grid rooftop kits with essential components bundled for faster installation and reliable performance.
+                  WAAREE Radiance is an all-in-one rooftop solar kit designed to simplify residential on-grid solar adoption—faster installation, lower maintenance, and reliable long-term performance.
                 </p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  <span className="rounded-full bg-brand-green/10 px-3 py-1 text-[11px] font-medium text-brand-green">
+                    Easy installation
+                  </span>
+                  <span className="rounded-full bg-brand-green/10 px-3 py-1 text-[11px] font-medium text-brand-green">
+                    Low maintenance
+                  </span>
+                  <span className="rounded-full bg-brand-green/10 px-3 py-1 text-[11px] font-medium text-brand-green">
+                    Reduce electricity bills
+                  </span>
+                </div>
               </div>
               <div className="rounded-3xl bg-secondary/40 p-3">
-                <img src={solarKitImg} alt="Solar Kits" className="w-full h-auto object-contain" loading="lazy" />
+                <img
+                  src={solarKitImg}
+                  alt="WAAREE Radiance solar kit (Solar Kits)"
+                  className="w-full h-full object-contain"
+                  loading="lazy"
+                />
               </div>
+
             </div>
+            <div className="mt-6 rounded-3xl border border-border/50 bg-white p-5">
+              <h4 className="text-lg font-semibold text-brand-navy">WAAREE Radiance Solar Kit</h4>
+              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                Radiance combines the core rooftop solar components into one ready-to-deploy package—solar modules, inverter, protection/ACDB & DCDB boards, and installation-ready cables, connectors, and earthing items.
+              </p>
+              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                Available in common residential capacities (3 kW / 4 kW / 5 kW) with single-phase and selected three-phase variants. Variants differ by module selection and configuration.
+              </p>
+            </div>
+
 
             <div className="mt-6 grid gap-5 md:grid-cols-[1fr_280px] items-center">
               <div>
@@ -884,23 +940,161 @@ export function Products() {
           </div>
         </div>
 
-        <CategoryNav />
+ <CategoryNav />
 
-        {categoryData.map((c) => (
-          <div key={c.id}>
-            <ProductCategorySection
-              id={c.id}
-              title={c.title}
-              description={c.description}
-              products={c.products}
-            />
-            {c.id === "products-wiring" ? <WiringSpecsSection /> : null}
+{categoryData.map((c) => (
+  <div key={c.id}>
+
+    {/* NORMAL PRODUCT SECTIONS */}
+    {c.id !== "products-solar-kits" && (
+      <ProductCategorySection
+        id={c.id}
+        title={c.title}
+        description={c.description}
+        products={c.products}
+      />
+    )}
+
+    {/* CUSTOM SOLAR KIT SECTION */}
+    {c.id === "products-solar-kits" && (
+      <section id="products-solar-kits" className="mt-20">
+
+        {/* TITLE */}
+        <div className="text-center max-w-4xl mx-auto">
+          <span className="text-sm font-semibold tracking-wide uppercase text-brand-green">
+            Solar Kits
+          </span>
+
+          <h2 className="mt-3 text-4xl sm:text-5xl font-bold text-brand-navy leading-tight">
+            WAAREE Radiance Solar Kits
+          </h2>
+
+          <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
+            Complete rooftop solar solutions designed for residential homes with
+            easy installation, reduced maintenance, and long-term performance.
+          </p>
+        </div>
+
+        {/* MAIN CONTENT */}
+        <div className="mt-14 grid gap-12 lg:grid-cols-[1.2fr_0.9fr] items-center bg-white rounded-[36px] border border-border/50 shadow-soft p-8 md:p-12">
+
+          {/* LEFT SIDE */}
+          <div>
+
+            <span className="inline-flex rounded-full bg-brand-green/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-brand-green">
+              Residential Solar Solution
+            </span>
+
+            <h3 className="mt-6 text-3xl md:text-4xl font-bold leading-tight text-brand-navy">
+              Complete Rooftop Solar Package
+            </h3>
+
+            <p className="mt-5 text-base md:text-lg leading-relaxed text-muted-foreground">
+              WAAREE Radiance combines premium solar modules,
+              on-grid inverter systems, ACDB/DCDB protection units,
+              cables, connectors, and installation-ready accessories
+              into one integrated package.
+            </p>
+
+            <p className="mt-5 text-base md:text-lg leading-relaxed text-muted-foreground">
+              Built for Indian weather conditions including heat,
+              dust, and voltage fluctuations, these kits deliver
+              reliable long-term energy generation and simplified installation.
+            </p>
+
+            {/* FEATURES */}
+            <div className="mt-8 flex flex-wrap gap-3">
+
+              <span className="rounded-full bg-brand-green/10 px-4 py-2 text-sm font-medium text-brand-green">
+                Easy Installation
+              </span>
+
+              <span className="rounded-full bg-brand-green/10 px-4 py-2 text-sm font-medium text-brand-green">
+                Low Maintenance
+              </span>
+
+              <span className="rounded-full bg-brand-green/10 px-4 py-2 text-sm font-medium text-brand-green">
+                Reduce Electricity Bills
+              </span>
+
+              <span className="rounded-full bg-brand-green/10 px-4 py-2 text-sm font-medium text-brand-green">
+                Long-Term Reliability
+              </span>
+
+            </div>
           </div>
-        ))}
+
+          {/* RIGHT SIDE IMAGE */}
+          <div className="rounded-[32px] bg-secondary/30 p-8 min-h-[500px] flex items-center justify-center">
+            <img
+              src={solarKitImg}
+              alt="WAAREE Radiance Solar Kit"
+              className="w-full max-w-[560px] object-contain hover:scale-105 transition duration-300"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        {/* LOWER INFO CARDS */}
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+
+          <div className="rounded-[28px] border border-border/50 bg-white p-6 shadow-soft">
+            <h4 className="text-xl font-bold text-brand-navy">
+              3 kW Kit
+            </h4>
+
+            <p className="mt-3 text-muted-foreground leading-relaxed">
+              Ideal for compact residential homes with standard
+              daily electricity usage.
+            </p>
+          </div>
+
+          <div className="rounded-[28px] border border-border/50 bg-white p-6 shadow-soft">
+            <h4 className="text-xl font-bold text-brand-navy">
+              4 kW Kit
+            </h4>
+
+            <p className="mt-3 text-muted-foreground leading-relaxed">
+              Balanced solution for medium-sized homes with
+              moderate energy requirements.
+            </p>
+          </div>
+
+          <div className="rounded-[28px] border border-border/50 bg-white p-6 shadow-soft">
+            <h4 className="text-xl font-bold text-brand-navy">
+              5 kW Kit
+            </h4>
+
+            <p className="mt-3 text-muted-foreground leading-relaxed">
+              High-capacity rooftop solar solution for larger
+              homes and increased appliance usage.
+            </p>
+          </div>
+
+          <div className="rounded-[28px] border border-border/50 bg-white p-6 shadow-soft">
+            <h4 className="text-xl font-bold text-brand-navy">
+              Subsidy Support
+            </h4>
+
+            <p className="mt-3 text-muted-foreground leading-relaxed">
+              PM Surya Ghar subsidy eligibility available
+              depending on government policies.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+    )}
+
+    {/* WIRING SECTION */}
+    {c.id === "products-wiring" ? <WiringSpecsSection /> : null}
+
+  </div>
+))}
       </div>
     </section>
   );
 }
-
 
 

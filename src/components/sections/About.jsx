@@ -3,8 +3,8 @@ import { Leaf, IndianRupee, Wrench } from "lucide-react";
 export function About() {
   return (
     <section id="about" className="py-20 sm:py-28 bg-secondary/40">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-12 items-center">
-        <div className="reveal md:col-start-1">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-12 items-start">
+        <div className="reveal md:col-start-1 flex flex-col">
           <p className="text-sm font-semibold tracking-wide uppercase text-brand-green">Urdwa Solar Company</p>
           <h3 className="mt-3 text-2xl font-bold text-brand-navy">Rooftop solar made for real homes</h3>
           <p className="mt-3 text-muted-foreground leading-relaxed">
@@ -12,7 +12,7 @@ export function About() {
             We guide you from the first site visit to system design, installation, and after-sales support—so you can go solar with confidence.
           </p>
         </div>
-        <div className="reveal">
+        <div className="reveal flex flex-col">
           <span className="text-sm font-semibold tracking-wide uppercase text-brand-green">About Us</span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-brand-navy">Clean energy, made simple for every home</h2>
           <p className="mt-4 text-muted-foreground leading-relaxed">

@@ -38,7 +38,7 @@ export function Hero() {
           {/* Left */}
           <div className="text-left text-white max-w-2xl">
             <span className="inline-flex items-center gap-2 rounded-full bg-brand-green/20 px-4 py-2 text-sm font-semibold text-brand-green">
-              <ShieldCheck className="h-4 w-4" /> Trusted Solar Partner • Andhra Pradesh
+              <ShieldCheck className="h-4 w-4" /> Trusted Solar Partner • Amalapuram •Andhra Pradesh
             </span>
 
             <h1 className="mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
