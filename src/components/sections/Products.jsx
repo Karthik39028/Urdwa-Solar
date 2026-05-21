@@ -113,87 +113,33 @@ const solarKits = [
 ];
 
 
+
+
+
 const fuseConnectors = [
   {
     img: fuseLq1,
-
-
     name: "LQ-1TC",
-
     power: "30A • 1500V",
-    desc: "Rated current 30A, rated voltage 1500V DC. Temperature range -40°C to +85°C. Protection IP67. Cable size 2.5 to 6 mm². Material: Copper with tin-plated surface.",
-    tags: ["30A", "1500V", "-40°C to +85°C", "IP67", "2.5–6 mm²", "Tin-plated copper"],
-  },
-  {
-    img: branchLq1y,
-    name: "LQ-1Y",
-
-    power: "30A • 1500V",
-    desc: "Rated current 30A, rated voltage 1500V DC. Temperature range -40°C to +85°C. Protection IP67. Cable size 2.5 to 6 mm². Material: Copper with tin-plated surface.",
-    tags: ["30A", "1500V", "-40°C to +85°C", "IP67", "2.5–6 mm²", "Tin-plated copper"],
-  },
-  {
-    img: bracnLq1y3,
-    name: "LQ-1Y3",
-
-    power: "30A • 1500V",
-    desc: "Rated current 30A, rated voltage 1500V DC. Temperature range -40°C to +85°C. Protection IP67. Cable size 2.5 to 6 mm². Material: Copper with tin-plated surface.",
-    tags: ["30A", "1500V", "-40°C to +85°C", "IP67", "2.5–6 mm²", "Tin-plated copper"],
-  },
-  {
-    img: branchLq1t4,
-    name: "LQ-1Y4",
-
-    power: "30A • 1500V",
-    desc: "Rated current 30A, rated voltage 1500V DC. Temperature range -40°C to +85°C. Protection IP67. Cable size 2.5 to 6 mm². Material: Copper with tin-plated surface.",
-    tags: ["30A", "1500V", "-40°C to +85°C", "IP67", "2.5–6 mm²", "Tin-plated copper"],
-  },
-  {
-    img: branchLq1x,
-    name: "LQ-1X",
-
-    power: "30A • 1500V",
-    desc: "Rated current 30A, rated voltage 1500V DC. Temperature range -40°C to +85°C. Protection IP67. Cable size 2.5 to 6 mm². Material: Copper with tin-plated surface.",
-    tags: ["30A", "1500V", "-40°C to +85°C", "IP67", "2.5–6 mm²", "Tin-plated copper"],
-  },
-  {
-    img: branchLq1,
-    name: "LQ-1",
-
-    power: "30A • 1500V",
-    desc: "Rated current 30A, rated voltage 1500V DC. Temperature range -40°C to +85°C. Protection IP67. Cable size 2.5 to 6 mm². Material: Copper with tin-plated surface.",
-    tags: ["30A", "1500V", "-40°C to +85°C", "IP67", "2.5–6 mm²", "Tin-plated copper"],
-  },
-  {
-    img: branchLq1t3,
-    name: "LQ-1T3",
-
-    power: "50A • 1500V",
-    desc: "Rated current 50A, rated voltage 1500V DC. Temperature range -40°C to +85°C. Protection IP67. Cable size 2.5 to 6 mm². Material: Copper with tin-plated surface.",
-    tags: ["50A", "1500V", "-40°C to +85°C", "IP67", "2.5–6 mm²", "Tin-plated copper"],
-  },
-  {
-    img: branchLq1t,
-    name: "LQ-1T4",
-
-    power: "50A • 1500V",
-    desc: "Rated current 50A, rated voltage 1500V DC. Temperature range -40°C to +85°C. Protection IP67. Cable size 2.5 to 6 mm². Material: Copper with tin-plated surface.",
-    tags: ["50A", "1500V", "-40°C to +85°C", "IP67", "2.5–6 mm²", "Tin-plated copper"],
-  },
-  {
-    img: branchLq1t5,
-    name: "LQ-1T5",
-
-    power: "50A • 1500V",
-    desc: "Rated current 50A, rated voltage 1500V DC. Temperature range -40°C to +85°C. Protection IP67. Cable size 2.5 to 6 mm². Material: Copper with tin-plated surface.",
-    tags: ["50A", "1500V", "-40°C to +85°C", "IP67", "2.5–6 mm²", "Tin-plated copper"],
-  },
-  {
-    img: branchLq1t,
-    name: "LQ-1T",
-    power: "50A • 1500V",
-    desc: "Rated current 50A, rated voltage 1500V DC. Temperature range -40°C to +85°C. Protection IP67. Cable size 2.5 to 6 mm². Material: Copper with tin-plated surface.",
-    tags: ["50A", "1500V", "-40°C to +85°C", "IP67", "2.5–6 mm²", "Tin-plated copper"],
+    desc:
+      "Fuse connector + holder for DC string protection in rooftop PV systems. IP67 sealed for outdoor installation—helping reduce dust and moisture ingress for reliable, long-term operation. Built for quick, secure cable termination and proper fuse mounting.",
+    tags: [
+      "30A",
+      "1500V",
+      "IP67",
+      "-40°C to +85°C",
+      "2.5–6 mm²",
+      "DC String Protection",
+    ],
+    details: {
+      "Rated current": "30 A",
+      "Rated voltage": "1500 V DC",
+      "Protection": "IP67 (outdoor sealed)",
+      "Operating temperature": "-40°C to +85°C",
+      "Cable size": "2.5–6 mm²",
+      "Conductor material": "Copper with tin-plated surface",
+      "Use case": "PV DC string fuse connection / holder",
+    },
   },
 ];
 
