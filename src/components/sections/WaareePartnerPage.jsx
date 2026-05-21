@@ -237,22 +237,39 @@ export function WaareePartnerPage() {
         {meta.title} {meta.description}
       </div>
 
-      <section className="relative pt-24 pb-14 overflow-hidden bg-white">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-green/5 to-transparent" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="grid lg:grid-cols-2 gap-10 items-center">
-            <div className="reveal text-left">
-              <div className="inline-flex items-center gap-3 rounded-2xl border border-border/60 bg-card/70 px-4 py-3 shadow-soft">
-                <img
-                  src={waareeLogo}
-                  alt="Waaree logo"
-                  className="h-20 w-44 max-w-full object-contain"
-                />
-                <div>
-                  <div className="text-sm font-semibold text-brand-green uppercase tracking-wide">Channel Partner • Waaree</div>
-                  <div className="text-base font-bold text-brand-navy">Urdwa Solar Company</div>
-                </div>
+     <section className="relative pt-24 pb-14 overflow-hidden bg-white">
+  <div className="absolute inset-0 bg-gradient-to-b from-brand-green/5 to-transparent" />
+
+  {/* FULL WIDTH CONTAINER */}
+  <div className="relative w-full px-4 sm:px-6 lg:px-10">
+
+    <div className="grid gap-10 items-center">
+
+      {/* LEFT CONTENT */}
+      <div className="reveal text-left w-full">
+
+        {/* WIDE WAAREE CARD */}
+        <div className="flex w-full items-center justify-between gap-8 rounded-[36px] border border-border/60 bg-white/95 px-8 lg:px-14 py-8 lg:py-10 shadow-soft backdrop-blur">
+
+          {/* LEFT SIDE */}
+<div className="flex flex-col lg:flex-row items-center justify-center gap-6 flex-1 text-center lg:text-left">
+            <img
+              src={waareeLogo}
+              alt="Waaree logo"
+className="h-24 sm:h-28 w-auto object-contain shrink-0 mr-50"            />
+
+<div className="flex-1 text-center">
+              <div className="text-sm font-semibold text-brand-green uppercase tracking-[0.25em]">
+                Channel Partner • Waaree
               </div>
+
+              <div className="mt-2 text-3xl sm:text-4xl font-black text-brand-navy leading-tight">
+                Urdwa Solar Company
+              </div>
+                </div>
+                  </div>
+                    </div>
+
 
               <h1 className="mt-6 text-4xl sm:text-5xl font-black text-brand-navy leading-tight">Powered by Trusted Solar Innovation</h1>
 
