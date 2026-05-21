@@ -259,16 +259,14 @@ export function WaareePartnerPage() {
 className="h-24 sm:h-28 w-auto object-contain shrink-0 mr-50"            />
 
 <div className="flex-1 text-center">
-              <div className="text-sm font-semibold text-brand-green uppercase tracking-[0.25em]">
-                Channel Partner 
+              <div className="text-large font-semibold text-brand-green uppercase tracking-[0.2em]">
+                Urdwa Solar Systems
               </div>
 
-              <div className="mt-2 text-3xl sm:text-4xl font-black text-brand-navy leading-tight">
-              WAAREE: Trusted Solar Innovation
+              <div className="mt-2 text-3xl sm:text-5xl font-black text-brand-navy leading-tight">
+              Channel Partner:WAAREE
               </div>
-                            <div className="text-sm font-semibold text-brand-green uppercase tracking-[0.27em] mt-4">
-                              One with the Sun
-</div>
+                            
                 </div>
                   </div>
                     </div>
