@@ -260,12 +260,15 @@ className="h-24 sm:h-28 w-auto object-contain shrink-0 mr-50"            />
 
 <div className="flex-1 text-center">
               <div className="text-sm font-semibold text-brand-green uppercase tracking-[0.25em]">
-                Channel Partner • Waaree
+                Channel Partner 
               </div>
 
               <div className="mt-2 text-3xl sm:text-4xl font-black text-brand-navy leading-tight">
-                Urdwa Solar Company
+              WAAREE: Trusted Solar Innovation
               </div>
+                            <div className="text-sm font-semibold text-brand-green uppercase tracking-[0.27em] mt-4">
+                              One with the Sun
+</div>
                 </div>
                   </div>
                     </div>
