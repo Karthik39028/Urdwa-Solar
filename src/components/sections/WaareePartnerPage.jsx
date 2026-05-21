@@ -252,20 +252,20 @@ export function WaareePartnerPage() {
         <div className="flex w-full items-center justify-between gap-8 rounded-[36px] border border-border/60 bg-white/95 px-8 lg:px-14 py-8 lg:py-10 shadow-soft backdrop-blur">
 
           {/* LEFT SIDE */}
-<div className="flex flex-col lg:flex-row items-center justify-center gap-6 flex-1 text-center lg:text-left">
-            <img
-              src={waareeLogo}
-              alt="Waaree logo"
-className="h-24 sm:h-28 w-auto object-contain shrink-0 mr-50"            />
-
+<div className="flex flex-col lg:flex-row items-center justify-center gap-6 flex-1 text-center lg:text-left"> 
+            
 <div className="flex-1 text-center">
-              <div className="text-large font-semibold text-brand-green uppercase tracking-[0.2em]">
-                Urdwa Solar Systems
-              </div>
 
-              <div className="mt-2 text-3xl sm:text-5xl font-black text-brand-navy leading-tight">
-              Channel Partner:WAAREE
-              </div>
+  <div className="inline-flex items-center gap-2 rounded-full bg-brand-green/10 px-5 py-2 text-sm sm:text-base font-bold text-brand-green uppercase tracking-[0.25em] border border-brand-green/20">
+    Urdwa Solar Systems
+  </div>
+
+  <div className="mt-5 text-4xl sm:text-6xl font-black text-brand-navy leading-[1.1] tracking-tight">
+    Official Channel Partner
+    <span className="block mt-2 text-brand-green">
+      WAAREE
+    </span>
+  </div>
                             
                 </div>
                   </div>
