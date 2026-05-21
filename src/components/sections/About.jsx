@@ -38,20 +38,21 @@ export function About() {
           <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-brand-navy">Clean energy, made simple for every home</h2>
           <p className="mt-4 text-muted-foreground leading-relaxed">
             Urdwa Solar is a fast-growing solar company focused on rooftop solar in and around Kakinada.
-            We help homeowners and small businesses move to clean energy with clear guidance, transparent execution, and reliable support.
-            Whether you want to reduce your electricity bills or become energy-independent, we make the process simple from start to finish.
+            We help homeowners move to clean energy with clear guidance, transparent execution, and reliable after-sales support.
+            From Waaree solar modules to ready-to-install Solar Kits (Radiance), we keep the planning and installation smooth—so you can reduce electricity bills and get long-term performance.
           </p>
 
 
           <div className="mt-4 grid gap-4">
             <div className="grid sm:grid-cols-2 gap-4">
-              <div className="rounded-xl bg-card p-5 shadow-soft border border-border/50">
+                <div className="rounded-xl bg-card p-5 shadow-soft border border-border/50">
                 <div className="text-sm font-semibold tracking-wide uppercase text-brand-green">What we sell</div>
                 <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
                   <li>• Waaree solar rooftop panels (modules)</li>
-                  <li>• Solar panel configurations for homes</li>
-                  <li>• Panel sizing guidance based on your roof & usage</li>
-                  <li>• Warranty-backed support for Waaree modules</li>
+                  <li>• Solar Kits (Radiance) for easy home installation</li>
+                  <li>• Solar panel configurations & sizing guidance for your roof & usage</li>
+                  <li>• Protection and safety components to complete the rooftop system</li>
+                  <li>• Warranty-backed support for Waaree products</li>
                 </ul>
               </div>
 
