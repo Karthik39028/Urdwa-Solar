@@ -1,5 +1,5 @@
 import waareeImg from "@/assets/waaree.jpg";
-import companyLogo from "@/assets/Companylogo.png";
+import companyLogo from "@/assets/urdwasolarsystemslogo.png";
 import {
   BadgeCheck,
   Building2,
