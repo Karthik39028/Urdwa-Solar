@@ -40,10 +40,16 @@ export function Hero() {
             <span className="inline-flex items-center gap-2 rounded-full bg-brand-green/20 px-4 py-2 text-sm font-semibold text-brand-green">
               <ShieldCheck className="h-4 w-4" /> Trusted Solar Partner • Amalapuram •Andhra Pradesh
             </span>
+      <div className="mt-5 text-3xl sm:text-6xl font-black text-brand-green leading-tight">
+  Urdwa Solar Systems
+</div>
 
-            <h1 className="mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
-              Power Your Home <span className="text-brand-green block">with Solar Energy</span>
-            </h1>
+<h1 className="mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-black text-white leading-tight">
+  Power Your Home
+  <span className="text-white block">
+    with Solar Energy
+  </span>
+</h1>
 
             <p className="mt-4 sm:mt-5 text-sm sm:text-base md:text-lg text-white/90 max-w-xl leading-relaxed">
               Clean, reliable solar with local support—built for Indian homes and businesses. Get a quick

@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
-import companyLogo from "@/assets/Companylogo.png";
+import companyLogo from "@/assets/urdwasolarsystemslogo.png";
 import waareeLogo from "@/assets/Waaree-logo.png";
+
 
 const links = [
   { href: "/", label: "Home" },
@@ -88,12 +89,10 @@ export function Navbar() {
           href="/"
           className="logo flex items-center font-bold text-brand-navy"
         >
-          <div className="logo-box flex items-center shrink-0">
-            <img
+<div className="logo-box flex items-center shrink-0 h-24 sm:h-28 lg:h-32">            <img
               src={companyLogo}
               alt="Urdwa Solar logo"
-              className="max-h-full max-w-full h-auto w-auto object-contain block"
-            />
+             className="h-full w-auto object-contain block scale-150 sm:scale-175"            />
           </div>
         </a>
 

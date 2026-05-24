@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin } from "lucide-react";
-import companyLogo from "@/assets/Companylogo.png";
+import companyLogo from "@/assets/urdwasolarsystemslogo.png";
 
 export function Footer() {
   return (
@@ -7,11 +7,11 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 grid md:grid-cols-3 gap-8">
         <div>
           <div className="flex items-center gap-2 font-bold">
-            <div className="logo-box">
+<div className="logo-box">
               <img
                 src={companyLogo}
                 alt="Urdwa Solar logo"
-                className="footer-logo"
+                className="footer-logo w-28 sm:w-32 lg:w-40 object-contain"
               />
             </div>
 <span className="text-lg">Urdwa Solar</span>
