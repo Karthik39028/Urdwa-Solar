@@ -1,9 +1,13 @@
 import { useEffect } from "react";
 import companyLogo from "@/assets/Companylogo.png";
 
-const TITLE = "Urdwa Solar Company — Affordable Solar Panels in Andhra Pradesh";
+const TITLE = "Urdwa Solar Systems | Solar Company in Andhra Pradesh";
 const DESCRIPTION =
-  "Urdwa Solar Company — channel partner of Waaree Energies. Reliable, affordable rooftop solar module supply and support for homes & businesses across Andhra Pradesh.";
+  "Urdwa Solar Systems provides rooftop solar solutions, solar kits, Waaree products, and renewable energy services in Andhra Pradesh.";
+
+const KEYWORDS =
+  "solar company Andhra Pradesh, Waaree dealer, rooftop solar, solar panels Amalapuram, Urdwa Solar";
+
 
 const PHONE = "+91 81794 51780";
 const EMAIL = "solarurdwa@gmail.com";
@@ -48,6 +52,12 @@ export function Seo() {
       createAttrs: { property: "og:locale" },
       content: "en_IN",
     });
+    upsertMeta({
+      selector: 'meta[name="keywords"]',
+      createAttrs: { name: "keywords" },
+      content: KEYWORDS,
+    });
+
     upsertMeta({
       selector: 'meta[property="og:url"]',
       createAttrs: { property: "og:url" },
