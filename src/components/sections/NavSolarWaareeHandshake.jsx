@@ -2,7 +2,7 @@ import { ArrowRight, ShieldCheck, Wrench } from "lucide-react";
 
 import partnershipHandshakeImg from "@/assets/handshake2.jpg";
 
-import urdhwaLogo from "@/assets/Companylogo.png";
+import urdhwaLogo from "@/assets/urdwasolarsystems.png";
 import waareeLogo from "@/assets/Waaree-logo.png";
 
 export function NavSolarWaareeHandshake() {

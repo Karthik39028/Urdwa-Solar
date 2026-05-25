@@ -16,13 +16,17 @@ import { WhatsAppFab } from "./components/WhatsAppFab.jsx";
 import { useReveal } from "./hooks/useReveal.js";
 import { Seo } from "./components/Seo.jsx";
 
+import { InitialLoader } from "./components/InitialLoader.jsx";
+
 export default function App() {
   useReveal();
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Seo />
+      <InitialLoader />
       <Navbar />
+
 
       <Routes>
         <Route
