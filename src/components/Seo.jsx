@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import companyLogo from "@/assets/Companylogo.png";
+import companyLogo from "@/assets/urdwasolarsystemslogo.png";
 
 const TITLE = "Urdwa Solar Systems | Solar Company in Andhra Pradesh";
 const DESCRIPTION =
