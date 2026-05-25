@@ -16,7 +16,7 @@ import {
 
 import waareeLogo from "@/assets/Waaree-logo.png";
 import handshakeImg from "@/assets/handshake.jpg";
-import companyLogo from "@/assets/Companylogo.png";
+import companyLogo from "@/assets/urdwasolarsystemslogo.png";
 
 function StatCard({ value, label }) {
   return (
@@ -349,11 +349,11 @@ export function WaareePartnerPage() {
             <div className="relative w-full max-w-2xl rounded-xl overflow-hidden border border-border/50 bg-gray-100">
               <img src={handshakeImg} alt="Handshake" className="w-full h-48 sm:h-56 object-cover" />
               <div className="absolute inset-x-0 top-0 flex justify-between px-4 py-4">
-                <div className="flex items-start rounded-2xl bg-white/95 p-2 shadow-soft">
-                  <img src={companyLogo} alt="Urdhwa logo" className="w-24 sm:w-32 object-contain" />
+                <div className="flex items-center justify-center rounded-2xl bg-white/95 p-2 shadow-soft">
+                  <img src={companyLogo} alt="Urdhwa logo" className="w-20 sm:w-28 object-contain" />
                 </div>
-                <div className="flex items-start rounded-2xl bg-white/95 p-2 shadow-soft">
-                  <img src={waareeLogo} alt="Waaree logo" className="w-28 sm:w-36 object-contain" />
+                <div className="flex items-center justify-center rounded-2xl bg-white/95 p-2 shadow-soft">
+                  <img src={waareeLogo} alt="Waaree logo" className="w-24 sm:w-32 object-contain" />
                 </div>
               </div>
             </div>

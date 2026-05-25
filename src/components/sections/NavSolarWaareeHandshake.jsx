@@ -2,8 +2,10 @@ import { ArrowRight, ShieldCheck, Wrench } from "lucide-react";
 
 import partnershipHandshakeImg from "@/assets/handshake2.jpg";
 
-import urdhwaLogo from "@/assets/urdwasolarsystems.png";
+import companyLogo from "@/assets/urdwasolarsystemslogo.png";
 import waareeLogo from "@/assets/Waaree-logo.png";
+
+
 
 export function NavSolarWaareeHandshake() {
   return (
@@ -22,17 +24,24 @@ export function NavSolarWaareeHandshake() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 p-6 sm:p-10">
             {/* Text */}
             <div className="flex flex-col justify-center">
-              <div className="mb-6 flex items-center gap-3">
-                <img
-                  src={waareeLogo}
-                  alt="Waaree logo"
-                  className="h-16 w-auto max-w-[45%] object-contain"
-                />
-                <img
-                  src={urdhwaLogo}
-                  alt="Urdhwa logo"
-                  className="h-16 w-auto max-w-[45%] object-contain"
-                />
+              <div className="mb-6 flex items-center justify-center gap-4">
+                <div className="flex items-center justify-center rounded-2xl bg-white/60 border border-border/60 px-4 py-2">
+                  <img
+                    src={waareeLogo}
+                    alt="Waaree logo"
+                    className="h-14 w-auto object-contain"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div className="flex items-center justify-center rounded-2xl bg-white/60 border border-border/60 px-4 py-2">
+                  <img
+                    src={companyLogo}
+                    alt="Urdwa Solar Systems logo"
+                    className="h-14 w-auto object-contain"
+                    loading="lazy"
+                  />
+                </div>
               </div>
               <div className="inline-flex items-center gap-2 self-start rounded-full bg-brand-green/10 px-4 py-2 text-sm font-semibold text-brand-green">
                 <ShieldCheck className="h-4 w-4" /> Authorized Waaree Channel Partner
